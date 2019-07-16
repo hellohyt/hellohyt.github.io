@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>hello | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="color-convert Color-convert is a color conversion library for JavaScript and node.It converts all ways between rgb, hsl, hsv, hwb, cmyk, ansi, ansi16, hex strings, and CSS keywords (will round to clos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hello">
+<meta property="og:url" content="http://yoursite.com/2019/07/15/hello/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="color-convert Color-convert is a color conversion library for JavaScript and node.It converts all ways between rgb, hsl, hsv, hwb, cmyk, ansi, ansi16, hex strings, and CSS keywords (will round to clos">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://travis-ci.org/Qix-/color-convert.svg?branch=master">
+<meta property="og:updated_time" content="2019-07-15T07:58:37.810Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hello">
+<meta name="twitter:description" content="color-convert Color-convert is a color conversion library for JavaScript and node.It converts all ways between rgb, hsl, hsv, hwb, cmyk, ansi, ansi16, hex strings, and CSS keywords (will round to clos">
+<meta name="twitter:image" content="https://travis-ci.org/Qix-/color-convert.svg?branch=master">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hello" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/15/hello/" class="article-date">
+  <time datetime="2019-07-15T07:53:52.000Z" itemprop="datePublished">2019-07-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hello
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="color-convert"><a href="#color-convert" class="headerlink" title="color-convert"></a>color-convert</h1><p><a href="https://travis-ci.org/Qix-/color-convert" target="_blank" rel="noopener"><img src="https://travis-ci.org/Qix-/color-convert.svg?branch=master" alt="Build Status"></a></p>
+<p>Color-convert is a color conversion library for JavaScript and node.<br>It converts all ways between <code>rgb</code>, <code>hsl</code>, <code>hsv</code>, <code>hwb</code>, <code>cmyk</code>, <code>ansi</code>, <code>ansi16</code>, <code>hex</code> strings, and CSS <code>keyword</code>s (will round to closest):</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> convert = <span class="built_in">require</span>(<span class="string">'color-convert'</span>);</span><br><span class="line"></span><br><span class="line">convert.rgb.hsl(<span class="number">140</span>, <span class="number">200</span>, <span class="number">100</span>);             <span class="comment">// [96, 48, 59]</span></span><br><span class="line">convert.keyword.rgb(<span class="string">'blue'</span>);                <span class="comment">// [0, 0, 255]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> rgbChannels = convert.rgb.channels;     <span class="comment">// 3</span></span><br><span class="line"><span class="keyword">var</span> cmykChannels = convert.cmyk.channels;   <span class="comment">// 4</span></span><br><span class="line"><span class="keyword">var</span> ansiChannels = convert.ansi16.channels; <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install color-convert</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="API"><a href="#API" class="headerlink" title="API"></a>API</h1><p>Simply get the property of the <em>from</em> and <em>to</em> conversion that you’re looking for.</p>
+<p>All functions have a rounded and unrounded variant. By default, return values are rounded. To get the unrounded (raw) results, simply tack on <code>.raw</code> to the function.</p>
+<p>All ‘from’ functions have a hidden property called <code>.channels</code> that indicates the number of channels the function expects (not including alpha).</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> convert = <span class="built_in">require</span>(<span class="string">'color-convert'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Hex to LAB</span></span><br><span class="line">convert.hex.lab(<span class="string">'DEADBF'</span>);         <span class="comment">// [ 76, 21, -2 ]</span></span><br><span class="line">convert.hex.lab.raw(<span class="string">'DEADBF'</span>);     <span class="comment">// [ 75.56213190997677, 20.653827952644754, -2.290532499330533 ]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// RGB to CMYK</span></span><br><span class="line">convert.rgb.cmyk(<span class="number">167</span>, <span class="number">255</span>, <span class="number">4</span>);     <span class="comment">// [ 35, 0, 98, 0 ]</span></span><br><span class="line">convert.rgb.cmyk.raw(<span class="number">167</span>, <span class="number">255</span>, <span class="number">4</span>); <span class="comment">// [ 34.509803921568626, 0, 98.43137254901961, 0 ]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Arrays"><a href="#Arrays" class="headerlink" title="Arrays"></a>Arrays</h3><p>All functions that accept multiple arguments also support passing an array.</p>
+<p>Note that this does <strong>not</strong> apply to functions that convert from a color that only requires one value (e.g. <code>keyword</code>, <code>ansi256</code>, <code>hex</code>, etc.)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> convert = <span class="built_in">require</span>(<span class="string">'color-convert'</span>);</span><br><span class="line"></span><br><span class="line">convert.rgb.hex(<span class="number">123</span>, <span class="number">45</span>, <span class="number">67</span>);      <span class="comment">// '7B2D43'</span></span><br><span class="line">convert.rgb.hex([<span class="number">123</span>, <span class="number">45</span>, <span class="number">67</span>]);    <span class="comment">// '7B2D43'</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Routing"><a href="#Routing" class="headerlink" title="Routing"></a>Routing</h2><p>Conversions that don’t have an <em>explicitly</em> defined conversion (in <a href="conversions.js">conversions.js</a>), but can be converted by means of sub-conversions (e.g. XYZ -&gt; <strong>RGB</strong> -&gt; CMYK), are automatically routed together. This allows just about any color model supported by <code>color-convert</code> to be converted to any other model, so long as a sub-conversion path exists. This is also true for conversions requiring more than one step in between (e.g. LCH -&gt; <strong>LAB</strong> -&gt; <strong>XYZ</strong> -&gt; <strong>RGB</strong> -&gt; Hex).</p>
+<p>Keep in mind that extensive conversions <em>may</em> result in a loss of precision, and exist only to be complete. For a list of “direct” (single-step) conversions, see <a href="conversions.js">conversions.js</a>.</p>
+<h1 id="Contribute"><a href="#Contribute" class="headerlink" title="Contribute"></a>Contribute</h1><p>If there is a new model you would like to support, or want to add a direct conversion between two existing models, please send us a pull request.</p>
+<h1 id="License"><a href="#License" class="headerlink" title="License"></a>License</h1><p>Copyright &copy; 2011-2016, Heather Arthur and Josh Junon. Licensed under the <a href="LICENSE">MIT License</a>.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/07/15/hello/" data-id="cjy53j3ld000164f5g67musoz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/07/15/hello/">hello</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/15/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
